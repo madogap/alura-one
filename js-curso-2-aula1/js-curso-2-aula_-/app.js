@@ -3,6 +3,9 @@ titulo.innerHTML = "Jogo do número secreto";
 let paragrafo = document.querySelector("p");
 paragrafo.innerHTML = "Escolha um número entre 1 e 10";
 
+
+let listaDeNumerosSorteados = [];
+
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -39,7 +42,14 @@ function verificarChute() {
 
 //Gerar números aleatórios sem parametros com retorno
 function gerarNumeroAleatorio() {
-  return parseInt(Math.random() * 10 + 1);
+  let numeroEscolhido = parseInt(Math.random() * 4 + 1);
+  if (listaDeNumerosSorteados.includes(numeroEscolhido)) {
+    return gerarNumeroAleatorio();
+  } else {
+    listaDeNumerosSorteados.push(numeroEscolhido);
+    console.log(listaDeNumerosSorteados);
+    return numeroEscolhido;
+  }
 };
 
 function limparCampo() {
