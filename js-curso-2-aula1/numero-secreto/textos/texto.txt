@@ -45,3 +45,14 @@ Outras linguagens também suportam o uso de arrays ou estruturas de dados semelh
 As listas ou Arrays fornecem uma maneira eficiente de armazenar e acessar conjuntos de dados, permitindo que os programadores organizem informações de forma lógica e manipulem esses dados de maneira eficaz.
 
 Tendo o conhecimento de como trabalhar com arrays, é possível criar algoritmos mais poderosos, resolver problemas de programação de forma mais eficiente e criar aplicações mais dinâmicas e interativas.
+
+
+Tipo de Função|	Exemplo de Código	| Uso
+Sem retorno e sem parâmetro	| function saudacao() { ... } |	Execução de bloco de código simples.
+Sem retorno e com parâmetro	| function cumprimentar(nome) { ... } |	Execução de bloco de código com argumentos.
+Com retorno e sem parâmetro	| function gerarNumeroAleatorio() { ... }	| Cálculo e retorno de um valor específico.
+Com retorno e com parâmetro	| function somar(a, b) { ... }	| Cálculo e retorno baseado em argumentos.
+Função anônima	| let saudacao = function() { ... };	| Definição de função sem nome localmente.
+Arrow function	| let quadrado = x => x * x;	| Definição concisa de funções curtas.
+
+
